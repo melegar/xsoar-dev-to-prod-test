@@ -1,0 +1,63 @@
+args:
+- default: true
+  description: The HTML to strip tags from
+  name: html
+  required: true
+comment: Extract regular text from the given HTML
+commonfields:
+  id: TextFromHTML
+  version: -1
+contentitemexportablefields:
+  contentitemfields:
+    definitionid: ""
+    fromServerVersion: 5.0.0
+    itemVersion: 1.11.59
+    packID: CommonScripts
+    packName: Common Scripts
+    packPropagationLabels:
+    - all
+    prevname: ""
+    propagationLabels: []
+    toServerVersion: ""
+dockerimage: demisto/python3:3.10.6.33415
+enabled: true
+engineinfo: {}
+mainengineinfo: {}
+name: TextFromHTML
+pswd: ""
+runas: DBotWeakRole
+runonce: false
+script: |
+  register_module_line('TextFromHTML', 'start', __line__())
+
+
+
+  import re
+
+
+  def text_from_html(args):
+      html = args['html']
+      body = re.search(r'<body.*/body>', html, re.M + re.S + re.I + re.U)
+      if body and body.group(0):
+          data = re.sub(r'<.*?>', '', body.group(0))
+          entities = {'quot': '"', 'amp': '&', 'apos': "'", 'lt': '<', 'gt': '>', 'nbsp': ' ',
+                      'copy': '(C)', 'reg': '(R)', 'tilde': '~', 'ldquo': '"', 'rdquo': '"', 'hellip': '...'}
+          for e in entities:
+              data = data.replace('&' + e + ';', entities[e])
+
+          return data
+      else:
+          return 'Could not extract text'
+
+
+  if __name__ in ["__builtin__", "builtins"]:
+      result = text_from_html(demisto.args())
+      demisto.results(result)
+
+  register_module_line('TextFromHTML', 'end', __line__())
+scripttarget: 0
+subtype: python3
+system: true
+tags:
+- Utility
+type: python
