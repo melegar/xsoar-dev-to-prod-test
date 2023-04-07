@@ -320,7 +320,7 @@ tasks:
       brand: ""
       id: 253e9206-6499-4698-81bc-4f6b405723e9
       iscommand: false
-      name: SailPointt
+      name: SailPoint
       type: title
       version: -1
     taskid: 253e9206-6499-4698-81bc-4f6b405723e9
@@ -1124,7 +1124,7 @@ tasks:
 
         This automation runs using the default Limited User role, unless you explicitly change the permissions.
         For more information, see the section about permissions here:
-        https://docs.paloaltonetworks.com/cortex/cortex-xsoar/6-2/cortex-xsoar-admin/playbooks/automations.html
+        https://docs-cortex.paloaltonetworks.com/r/Cortex-XSOAR/6.10/Cortex-XSOAR-Administrator-Guide/Automations
       id: 90c4e379-c164-495b-8bd0-74e807433506
       iscommand: false
       name: Set Naming Convention to a key
@@ -1179,7 +1179,7 @@ tasks:
 
         This automation runs using the default Limited User role, unless you explicitly change the permissions.
         For more information, see the section about permissions here:
-        https://docs.paloaltonetworks.com/cortex/cortex-xsoar/6-2/cortex-xsoar-admin/playbooks/automations.html
+        https://docs-cortex.paloaltonetworks.com/r/Cortex-XSOAR/6.10/Cortex-XSOAR-Administrator-Guide/Automations
       id: 603550b4-89d3-4df1-84d9-1eb2951e0871
       iscommand: false
       name: Identify Potential Sensitive Users
@@ -1228,7 +1228,7 @@ tasks:
 
         This automation runs using the default Limited User role, unless you explicitly change the permissions.
         For more information, see the section about permissions here:
-        https://docs.paloaltonetworks.com/cortex/cortex-xsoar/6-2/cortex-xsoar-admin/playbooks/automations.html
+        https://docs-cortex.paloaltonetworks.com/r/Cortex-XSOAR/6.10/Cortex-XSOAR-Administrator-Guide/Automations
       id: 93dc1c23-81e4-40fd-8f62-9f4290882421
       iscommand: false
       name: Set User to a potential block list
@@ -1488,7 +1488,7 @@ tasks:
 
         This automation runs using the default Limited User role, unless you explicitly change the permissions.
         For more information, see the section about permissions here:
-        https://docs.paloaltonetworks.com/cortex/cortex-xsoar/6-2/cortex-xsoar-admin/playbooks/automations.html
+        https://docs-cortex.paloaltonetworks.com/r/Cortex-XSOAR/6.10/Cortex-XSOAR-Administrator-Guide/Automations
       id: 9e174bd8-73a8-46ef-8a56-138a1cac0b61
       iscommand: false
       name: Set the final accounts list to be blocked
@@ -1532,7 +1532,7 @@ tasks:
 
         This automation runs using the default Limited User role, unless you explicitly change the permissions.
         For more information, see the section about permissions here:
-        https://docs.paloaltonetworks.com/cortex/cortex-xsoar/6-2/cortex-xsoar-admin/playbooks/automations.html
+        https://docs-cortex.paloaltonetworks.com/r/Cortex-XSOAR/6.10/Cortex-XSOAR-Administrator-Guide/Automations
       id: f97632fd-1653-4fda-8222-e8dbe5c36646
       iscommand: false
       name: Set the final accounts list to be blocked
