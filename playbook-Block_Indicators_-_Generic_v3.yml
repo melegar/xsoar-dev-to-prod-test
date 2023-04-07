@@ -790,11 +790,11 @@ tasks:
     skipunavailable: false
     task:
       brand: Builtin
-      description: commands.local.cmd.set.indicators
+      description: commands.local.cmd.add.values.to.indicator.multi.select.field
       id: 8e6165ed-cc2e-4820-8ae4-c73fd82a3088
       iscommand: true
       name: Tag bad indicators
-      script: Builtin|||setIndicators
+      script: Builtin|||appendIndicatorField
       type: regular
       version: -1
     taskid: 8e6165ed-cc2e-4820-8ae4-c73fd82a3088
