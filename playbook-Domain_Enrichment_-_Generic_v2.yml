@@ -206,7 +206,7 @@ tasks:
     task:
       brand: ""
       description: Checks if there is an active instance of the Virus Total Private
-        API integration enabled. enabled.
+        API integration enabled.
       id: 3ab86896-10aa-45be-83cf-7dcca9b6aa92
       iscommand: false
       name: Is VirusTotal Private API enabled?
