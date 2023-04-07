@@ -389,7 +389,6 @@ tasks:
       id: 9fa921fa-d196-40ba-8419-ed0c4f838ab8
       iscommand: false
       name: Is Carbon Black Enterprise Response enabled?
-      script: Exists
       type: condition
       version: -1
     taskid: 9fa921fa-d196-40ba-8419-ed0c4f838ab8
@@ -430,12 +429,12 @@ tasks:
     separatecontext: false
     skipunavailable: true
     task:
-      brand: carbonblack-v2
-      description: Gets host information from Carbon Black Enterprise Response.
+      brand: VMware Carbon Black EDR v2
+      description: List the CarbonBlack sensors
       id: 79f17c3a-2456-47d9-8e68-cc3d84ef01bd
       iscommand: true
       name: Get host information from Carbon Black Enterprise Response
-      script: carbonblack-v2|||cb-sensor-info
+      script: VMware Carbon Black EDR v2|||endpoint
       type: regular
       version: -1
     taskid: 79f17c3a-2456-47d9-8e68-cc3d84ef01bd
@@ -493,7 +492,7 @@ tasks:
         Host integration enabled.
       id: 216aed2b-2f34-4c5e-8c54-60b978218896
       iscommand: false
-      name: Is CrowdStrike Falcon Host enabled?
+      name: Is CrowdStrike Falcon enabled?
       script: Exists
       type: condition
       version: -1
@@ -614,7 +613,7 @@ tasks:
       brand: ""
       id: 5d371f29-3a4c-43c5-8f71-b383db2e5320
       iscommand: false
-      name: CrowdStrike Falcon Host
+      name: CrowdStrike Falcon
       type: title
       version: -1
     taskid: 5d371f29-3a4c-43c5-8f71-b383db2e5320
@@ -708,14 +707,14 @@ tasks:
     separatecontext: false
     skipunavailable: true
     task:
-      brand: Active Directory Query v2
-      description: |-
-        Uses Active Directory to retrieve detailed information about the computer of the account specified. The computer can be specified by name, email address, or as an Active Directory Distinguished Name (DN).
-        If no filters are specified, returns all computers.
+      brand: ""
+      description: Retrieves detailed information about a computer account. The computer
+        can be specified by name, email address, or as an Active Directory Distinguished
+        Name (DN). If no filters are provided, all computers are returned.
       id: 23c75906-3b4e-42e8-8e32-c883d5f06fb3
       iscommand: true
       name: Get host information from Active Directory
-      script: Active Directory Query v2|||ad-get-computer
+      script: '|||ad-get-computer'
       type: regular
       version: -1
     taskid: 23c75906-3b4e-42e8-8e32-c883d5f06fb3
