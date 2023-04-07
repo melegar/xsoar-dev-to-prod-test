@@ -291,7 +291,6 @@ tasks:
       iscommand: false
       name: Predict Phishing URLs
       script: DBotPredictURLPhishing
-      scriptName: DBotPredictURLPhishing
       type: regular
       version: -1
     taskid: cdddceeb-fc75-4a43-8cce-e0d6eb1fde3b
@@ -489,7 +488,6 @@ tasks:
       iscommand: false
       name: Predict phishing type using pre-trained OOTB phishing model
       script: DBotPredictOutOfTheBoxV2
-      scriptName: DBotPredictOutOfTheBoxV2
       type: regular
       version: -1
     taskid: 948d42a3-3fd5-4592-8da5-3c02768ca950
