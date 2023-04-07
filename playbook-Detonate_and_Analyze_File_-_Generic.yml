@@ -163,7 +163,7 @@ tasks:
       id: a10b7555-36b7-444e-874c-20c10a692311
       iscommand: false
       name: Wildfire Detonate and Analyze File
-      playbookName: Wildfire Detonate and Analyze File
+      playbookId: Wildfire Detonate and Analyze File
       type: playbook
       version: -1
     taskid: a10b7555-36b7-444e-874c-20c10a692311
@@ -419,7 +419,7 @@ tasks:
       id: 9392e375-e991-4914-8db3-0bf4a52f77bc
       iscommand: false
       name: Mitre Attack - Extract Technique Information From ID
-      playbookName: Mitre Attack - Extract Technique Information From ID
+      playbookId: Mitre Attack - Extract Technique Information From ID
       type: playbook
       version: -1
     taskid: 9392e375-e991-4914-8db3-0bf4a52f77bc
