@@ -586,7 +586,7 @@ tasks:
       id: f3930403-3082-4fe5-8d5e-a43fb7be3fbc
       iscommand: true
       name: Get IP EDL Object from Panorama
-      script: '|||panorama-get-edl'
+      script: '|||pan-os-get-edl'
       type: regular
       version: -1
     taskid: f3930403-3082-4fe5-8d5e-a43fb7be3fbc
@@ -678,7 +678,7 @@ tasks:
       id: 8061fbe2-5725-4966-8947-83c3c7431295
       iscommand: true
       name: Create IP EDL Object access by instance name
-      script: '|||panorama-create-edl'
+      script: '|||pan-os-create-edl'
       type: regular
       version: -1
     taskid: 8061fbe2-5725-4966-8947-83c3c7431295
@@ -724,7 +724,7 @@ tasks:
       id: 396052c1-a821-4c77-8546-7c8ff69e3f67
       iscommand: true
       name: Create URL EDL Object access by instance name
-      script: '|||panorama-create-edl'
+      script: '|||pan-os-create-edl'
       type: regular
       version: -1
     taskid: 396052c1-a821-4c77-8546-7c8ff69e3f67
@@ -941,7 +941,7 @@ tasks:
       id: 4eb31ab7-4e64-4a0b-82b4-46d68ef36550
       iscommand: true
       name: Get URL EDL Object from Panorama
-      script: '|||panorama-get-edl'
+      script: '|||pan-os-get-edl'
       type: regular
       version: -1
     taskid: 4eb31ab7-4e64-4a0b-82b4-46d68ef36550
@@ -1246,7 +1246,7 @@ tasks:
       id: f27860aa-3c23-4afe-8436-7aa6affcf125
       iscommand: true
       name: Create IP EDL Object access by port
-      script: '|||panorama-create-edl'
+      script: '|||pan-os-create-edl'
       type: regular
       version: -1
     taskid: f27860aa-3c23-4afe-8436-7aa6affcf125
@@ -1292,7 +1292,7 @@ tasks:
       id: 5a2a0264-7ba9-4762-898e-67b862f7898b
       iscommand: true
       name: Create URL EDL Object access by port
-      script: '|||panorama-create-edl'
+      script: '|||pan-os-create-edl'
       type: regular
       version: -1
     taskid: 5a2a0264-7ba9-4762-898e-67b862f7898b
@@ -1812,7 +1812,7 @@ tasks:
       id: 6de000f4-b63f-420f-8f05-329a913a3ad4
       iscommand: true
       name: List PAN-OS rules
-      script: '|||panorama-list-rules'
+      script: '|||pan-os-list-rules'
       type: regular
       version: -1
     taskid: 6de000f4-b63f-420f-8f05-329a913a3ad4
